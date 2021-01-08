@@ -1,0 +1,69 @@
+=>PYTHONTEX#py#default#default#0#code#####23#
+from sympy import *
+x=symbols('x')
+f = (x**5)*ln(x)
+g = Integral(f,x)
+=>PYTHONTEX#py#default#default#1#i#####30#
+latex(g)
+=>PYTHONTEX#py#default#default#2#i#####30#
+latex(g.doit())
+=>PYTHONTEX#py#default#defaultverb#0#verbatim#####32#
+import math
+
+def racine(a):
+    return math.sqrt(a)
+
+print(racine(9))
+=>PYTHONTEX#py#default#default#3#code#####46#
+import math
+
+def racine(a):
+    return math.sqrt(a)
+
+print(racine(9))
+=>PYTHONTEX#pycon#default#default#0#console#####55#
+var = 1 + 1
+var
+=>PYTHONTEX#py#default#default#4#code#####63#
+import numpy as np
+from pylab import *
+import matplotlib.pyplot as plt
+
+
+def f(t):
+	return cos(3*t)
+	
+t = np.linspace(0,5,500)
+
+y = f(t)
+
+plt.clf()
+plt.figure(figsize=(5, 3))
+plt.plot(t,y)
+
+plt.savefig("myplot.pdf", bbox_inches="tight")
+=>PYTHONTEX:SETTINGS#
+version=0.17
+outputdir=pythontex-files-test12378
+workingdir=.
+workingdirset=false
+gobble=none
+rerun=default
+hashdependencies=default
+makestderr=false
+stderrfilename=full
+keeptemps=none
+pyfuture=default
+pyconfuture=none
+pygments=true
+pygglobal=:GLOBAL||
+fvextfile=-1
+pyconbanner=none
+pyconfilename=stdin
+depythontex=false
+pygfamily=py|python3|
+pygfamily=pycon|pycon|
+pygfamily=sympy|python3|
+pygfamily=sympycon|pycon|
+pygfamily=pylab|python3|
+pygfamily=pylabcon|pycon|
