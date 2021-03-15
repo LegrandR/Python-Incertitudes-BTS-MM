@@ -41,7 +41,6 @@ ax.errorbar(Ai, np.arange(N), xerr=ei, fmt='+', color = 'k', ecolor='k', alpha=0
 ax.set_xlabel("Activité en coups par seconde");ax.set_ylabel("Mesure");
 ax.set_ylim([-2,N+2])
 
-plt.savefig("C:/Users/Romain/Desktop/Mesures/Images/ActiviteRadioactiveDonneesStochastique.pdf", bbox_inches='tight', transparent=True, pad_inches=0)
 
       
       
@@ -87,7 +86,6 @@ ax = plot_mcmc(sample.T, fig=fig, labels=[r'$\mu_A$', r'$\sigma_A$'], colors='k'
 ax[0].plot(sample[:, 0], sample[:, 1], ',k', alpha=0.1)
 ax[0].plot([mu_A], [sigma_A], 'o', color='red', ms=10);
 
-plt.savefig("C:/Users/Romain/Desktop/Mesures/Images/PosterieurDeuxParametresActiviteRadioactive.pdf", bbox_inches='tight', transparent=True, pad_inches=0)
 
 print(" mu    = {0:.0f} +/- {1:.0f}".format(sample[:, 0].mean(), sample[:, 0].std()))
 print(" sigma = {0:.0f} +/- {1:.0f}".format(sample[:, 1].mean(), sample[:, 1].std()))

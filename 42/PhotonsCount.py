@@ -12,7 +12,7 @@ from scipy import stats
 np.random.seed(1)  # for repeatability
 
 F_true = 1000  # true flux, say number of photons measured in 1 second
-N = 1 # number of measurements
+N = 100 # number of measurements
 F = stats.poisson(F_true).rvs(N)  # N measurements of the flux
 e = np.sqrt(F)  # errors on Poisson counts estimated via square root
 

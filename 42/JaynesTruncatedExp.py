@@ -24,7 +24,7 @@ plt.ylim(0, 1.1)
 plt.xlim(6, 18)
 plt.xlabel('t')
 plt.ylabel('p(t)');
-plt.savefig("C:/Users/Romain/Desktop/Mesures/Images/TruncatedExp.pdf", bbox_inches="tight")
+#plt.savefig("C:/Users/Romain/Desktop/Mesures/Images/TruncatedExp.pdf", bbox_inches="tight")
 
 
 #Approche classique

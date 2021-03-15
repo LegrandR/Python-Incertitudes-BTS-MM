@@ -1,4 +1,0 @@
-girafe
-lion
-pangolin
-souris

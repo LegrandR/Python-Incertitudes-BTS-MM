@@ -106,9 +106,9 @@ for j in range(jmax):
         axs[j,i].plot(R_line, p2, 'b', ls = 'dashdot', lw = 1)
         axs[j,i].text(470,0.8*pmax,'N={}'.format(N))
         axs[j,i].text(468,1.1*pmax,'$R(p_{max})$' + '={:.1f}'.format(np.trapz(R_line*p1, R_line)),color='k')
-        axs[j,i].text(509,1.1*pmax,'$R(p_{max})$' +'={:.1f}'.format(np.trapz(R_line*p2, R_line)+0.07),color='B')
+        axs[j,i].text(509,1.1*pmax,'$R(p_{max})$' +'={:.1f}'.format(np.trapz(R_line*p2, R_line)+0.07),color='b')
         axs[j,i].set_xlabel(r"$R_0 (\Omega$)")
         axs[j,i].set_ylabel(r"$p(R_0 |\lbrace R_i \rbrace, \sigma_R)$")
         
         
-plt.savefig("C:/Users/Romain/Desktop/Mesures/Images/PriorInfluence.pdf", bbox_inches='tight', transparent=True, pad_inches=0.5)
+#plt.savefig("C:/Users/Romain/Desktop/Mesures/Images/PriorInfluence.pdf", bbox_inches='tight', transparent=True, pad_inches=0.5)
